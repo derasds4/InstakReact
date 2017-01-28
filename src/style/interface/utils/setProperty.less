@@ -1,0 +1,11 @@
+@import "../../config/interface/value";
+
+.setProperty(@name){
+  @{name}: @Interface-Value-L;
+  @media screen and (max-width: 768px){
+      @{name}: @Interface-Value-M;
+  }
+  @media screen and (max-width: 480px){
+      @{name}: @Interface-Value-S;
+  }
+}

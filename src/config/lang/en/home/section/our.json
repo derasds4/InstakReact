@@ -1,0 +1,31 @@
+{
+  "navTitle":"Our advantages",
+  "title":"Our advantages",
+  "items":{
+    "ease":{
+      "title":"SIMPLE TO APPLY",
+      "content":"There are set interface information materials for the effective promotion of your page. Registration and configuring parameters will take only a few minutes."
+    },
+    "live":{
+      "title":"LIVE AUIDIENCE",
+      "content":"Our service doesn't collect any bots or offers; it gives you a chance to gather a 100% live audience. Take advantage of this opportunity!"
+    },
+    "mobile":{
+      "title":"EVEN ON THE MOBILES",
+      "content":"Our service works on the tablets and various individual devices that are able to open other sites; it can even be used on mobile devices."
+    },
+    "speed":{
+      "title":"FANTASTIC SPEED",
+      "content":"With the help of our service, you can involve 1000 people to your Instagram page per day from any parts of the world. It is very simple with us!"
+    },
+    "support":{
+      "title":"24 HOURS OF CUSTOMER SUPPORT",
+      "content":"We are always ready to answer all of your questions and to solve the problems occurred while working with the service; so we make it up for the lost days."
+    },
+    "secure":{
+      "title":"WE PROVIDE YOU WITH TOTAL SECURITY",
+      "content":"The service operates in accordance with all the known limits and rules of Instagram. Your personal information is kept confidential and not transmitted elsewhere."
+    }
+  },
+  "showAll":"Show all"
+}

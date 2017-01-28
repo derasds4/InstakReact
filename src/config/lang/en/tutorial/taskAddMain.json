@@ -1,0 +1,10 @@
+{
+  "selectType": {
+    "title": "Select type",
+    "content": "Select needle action and source for targets"
+  },
+  "addTargets": {
+    "title": "Add targets",
+    "content": "Add your targets"
+  }
+}

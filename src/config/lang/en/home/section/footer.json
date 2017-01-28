@@ -1,0 +1,22 @@
+{
+  "about": {
+    "title": "All rights reserved © 2016",
+    "description": "It is an automated service for advancing the Instagram."
+  },
+  "links": {
+    "0": {
+      "offices": "FAQ",
+      "about": "Blog",
+      "docs": "",
+      "qa": ""
+    },
+    "1": {
+      "partners": "Cooperation",
+      "politics": "Privacy policy",
+      "articles": ""
+    }
+  },
+  "socials":{
+    "title":"We are on the social media"
+  }
+}

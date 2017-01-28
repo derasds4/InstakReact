@@ -1,0 +1,52 @@
+<div class="windows">
+    <form class="window" data-id="login">
+        <div class="close"></div>
+        <h5>Вход</h5>
+        <div class="login-socials">
+            <button data-type="vk">
+                <i class="icon" data-bgimage="vk"></i>
+                <span>Вконтакте</span>
+            </button>
+            <button data-type="fb">
+                <i class="icon" data-bgimage="fb"></i>
+                <span>Facebook</span>
+            </button>
+        </div>
+        <input type="email" name="username" placeholder="Email" />
+        <input type="password" name="password" placeholder="Пароль" />
+        <div class="helpers">
+            <a href="#forgot">Забыли пароль?</a>
+            <a href="#create" data-window="create">Регистрация</a>
+        </div>
+        <button type="submit">Войти</button>
+    </form>
+    <form class="window" data-id="create">
+        <div class="close"></div>
+        <h5>Регистрация</h5>
+        <input type="text" placeholder="Ваше имя" />
+        <input type="email" placeholder="Email" />
+        <input type="password" placeholder="Пароль" />
+        <div class="agree">
+            <input type="checkbox" />
+            <span>Сограсен с <a href="#rules">правилами и условиями</a> сервиса</span>
+        </div>
+        <button type="submit">Зарегистрироваться</button>
+    </form>
+    <div class="window" data-id="support">
+        <div class="close"></div>
+        <h5>Поддержка</h5>
+        <a class="button colored" href="https://vk.com/im?sel=-124520534" target="_blank" data-type="vk">
+            <i class="icon" data-bgimage="social.vk"></i>
+            <span>Вконтакте</span>
+        </a>
+        <a class="button colored" href="https://www.messenger.com/t/1591814607784895" target="_blank" data-type="fb">
+            <i class="icon" data-bgimage="social.fb"></i>
+            <span>Facebook</span>
+        </a>
+        <div class="pd-t">
+            Шо-то там
+        </div>
+    </div>
+</div>
+
+<div class="support-icon" data-bgimage="support" data-window="support"></div>

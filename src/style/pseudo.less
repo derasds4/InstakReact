@@ -1,0 +1,7 @@
+.pseudo(@name,@rules){
+  &:@{name}{
+    content:"";
+    display:block;
+    @rules();
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "title": "Add task",
+  "elements": {
+    "type":{
+      "title": "Type",
+      "items": {
+        "follow": "Follow",
+        "unfollow": "Unfollow",
+        "like": "Like"
+      }
+    },
+    "sourceType":{
+      "title": "Source type",
+      "items": {
+        "followers": "Followers",
+        "followings": "Followings",
+        "hashtag": "Hashtag",
+        "custom": "Custom list",
+        "place": "Place"
+      }
+    },
+    "account": {
+      "title": "Account"
+    },
+    "hashtag": {
+      "title": "Hashtag"
+    }
+  },
+  "section":{
+    "main": {
+      "title": "General settings",
+      "action": "Action",
+      "target": "Target"
+    },
+    "filter": {
+      "title": "Filter",
+      "followers": {
+        "title": "Followers"
+      },
+      "followings": {
+        "title": "Followings"
+      },
+      "media":{
+        "title": "Posts count"
+      },
+      "rules": {
+        "title": "Inspections"
+      }
+    }
+  },
+  "rulePassive": "Any",
+  "rules": {
+    "private":{
+      "title": "Privacy",
+      "include": "Only private",
+      "exclude": "Only non-private"
+    },
+    "business":{
+      "title": "Business profile",
+      "include": "Only business",
+      "exclude": "Only non-business"
+    },
+    "picture":{
+      "title": "Profile picture",
+      "include": "Only with picture",
+      "exclude": "Only without picture"
+    },
+    "link":{
+      "title": "Link",
+      "include": "Only with link",
+      "exclude": "Only without link"
+    }
+  }
+}

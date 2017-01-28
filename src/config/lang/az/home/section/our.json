@@ -1,0 +1,31 @@
+{
+  "navTitle":"Bizim üstünlüklərimiz",
+  "title":"Bizim üstünlüklərimiz",
+  "items":{
+    "ease":{
+      "title":"SADƏ İSTİFADƏ",
+      "content":"Səhifənizin effektiv irəliləyişi üçün interfeysdə informasiya materialları qoyulmuşdur. Qeydiyyat və parametrlərin sazlanması bir neçə dəqiqə alacaq."
+    },
+    "live":{
+      "title":"CANLI AUDİTORİYA",
+      "content":"Servisimiz heç bir bot və ya offer yığmır, sizə 100% canlı auditoriyanı cəlb etmək imkanı verir. Fürsətdən yararlanın!"
+    },
+    "mobile":{
+      "title":"HƏTTA TELEFONLARDA",
+      "content":"Bizim servis planşet və digər saytları açan fərdi qurğularda işləyir, hətta mobil cihazlarda da istifadə oluna bilər."
+    },
+    "speed":{
+      "title":"FANTASTİK SÜRƏT",
+      "content":"Servisimiz vasitəsilə siz səhifənizə dünyanın istənilən nöqtəsindən gün ərzində 1000 nəfər cəlb edə bilərsiniz. Bu bizimlə çox sadədir!"
+    },
+    "support":{
+      "title":"24 SAAT TEXNİKİ XİDMƏT",
+      "content":"Hər zaman biz sizin bütün suallarınıza cavab verməyə, servislə iş zamanı yaranmış problemləri həll etməyə hazırıq. İtirilmiş günləri belə kompensasiya edirik."
+    },
+    "secure":{
+      "title":"TƏHLÜKƏSİZLİYİ TƏMİN EDİRİK",
+      "content":"Servis instagramın bütün tanınmış limitlərinə və qaydalarına uyğun fəaliyyət göstərir. Sizin fərdi məlumatlarınız tam məxfi saxlanılır və heç yerə yayımlanmır."
+    }
+  },
+  "showAll":"Hamısını göstərmək?"
+}

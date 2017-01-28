@@ -1,0 +1,9 @@
+.isHover(@rules){
+
+  @media screen and (min-width: 768px) {
+    &:not(:global(.active)):not(:active):hover {
+      @rules();
+    }
+  }
+
+}

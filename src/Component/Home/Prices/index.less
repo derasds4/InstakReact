@@ -1,0 +1,232 @@
+@import "../../../style/interface/background";
+@import "../../../style/isHoverActive";
+@import "../../../style/config/color";
+@import "../index";
+
+#Section:extend(.bgimage-center){
+
+  background-position: bottom center;
+  background-color: #faf8fb;
+
+  >.Container:extend(.container){
+
+    padding:60px 0;
+    text-align: center;
+
+    h2{
+      font-size:2.2rem;
+      margin:0 0 15px;
+    }
+
+    .description{
+      color:#666;
+      font-size:.95rem;
+      margin: 0 0 35px;
+      font-weight: 300;
+    }
+
+    >.Months{
+
+      @fgcolor: #a4a2a9;
+      @bgcolor: #e7e5ed;
+      margin:0 0 50px;
+
+      >button{
+        display: inline-block;
+        float: none;
+        margin: 5px;
+        background-color: @bgcolor;
+        color: @fgcolor;
+        box-shadow: 0 0 6px transparent;
+
+        .isHoverActive({
+          background-color: darken(@bgcolor, 15%);
+          color: darken(@fgcolor, 15%);
+        },{
+          color: #fff;
+          background-color: @Color-Main;
+          box-shadow: 0 0 6px @Color-Main;
+        });
+
+        >.MonthDiscount{
+
+          letter-spacing: 0.5px;
+          font-weight: 500;
+          font-size: 13px;
+          position: relative;
+          top: -5px;
+          left: 5px;
+
+          &:before{
+            content:"-";
+          }
+          &:after{
+            content:"%";
+          }
+
+        }
+
+        &:nth-child(2){
+          >.MonthDiscount{
+            color: #4CAF50;
+          }
+        }
+        &:nth-child(3){
+          >.MonthDiscount{
+            color: @Color-Red;
+          }
+        }
+
+      }
+
+    }
+
+    >.Prices{
+
+      overflow: hidden;
+
+      >.PriceItem{
+
+        width:~"calc( 100% / 3 - 25px)";
+        background: #fff;
+        border-radius: 10px;
+        display:inline-block;
+        margin: 10px;
+        max-width:270px;
+        box-shadow: 0 0 7px #bbb;
+
+        >.PriceItemInfo,
+        >.PriceItemDetails{
+          position:relative;
+          margin:0;
+        }
+
+        >.PriceItemInfo{
+
+          padding:25px;
+
+          >h5{
+            font-size:1.75rem;
+          }
+          >.PriceItemPrice{
+
+            font-size:1.9rem;
+            color: @Color-Main;
+            font-weight:500;
+            letter-spacing: 1px;
+
+            &:after{
+              content:" AZN";
+            }
+
+          }
+
+          >.time{
+            color:@Color-Main;
+            letter-spacing: 1px;
+            font-weight: 500;
+          }
+
+          &:after{
+            content:" ";
+            position: absolute;
+            bottom: 0;
+            left: 30px;
+            right:30px;
+            border-bottom: 1px dashed @Color-Red;
+          }
+
+        }
+
+        >.PriceItemDetails{
+
+          text-align: left;
+          line-height: 16px;
+          padding:25px;
+          font-size: .9rem;
+
+          >li{
+
+            white-space: nowrap;
+            width:100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding: 4px 0;
+
+            >.PriceItemDetailCheckmark:extend(.bgimage-center){
+              margin:1px 10px 1px 0;
+              width:14px;
+              height:14px;
+              background-size: contain;
+              vertical-align: bottom;
+              display:inline-block;
+            }
+
+          }
+
+          &:before,
+          &:after{
+            width:50px;
+            height:50px;
+            //background: #faf8fb;
+            border-radius: 25px;
+            position:absolute;
+            top: 0;
+            margin-top: -25px;
+            //content:" ";
+          }
+
+          &:before{
+            left:0;
+            margin-left:-25px;
+          }
+
+          &:after{
+            right:0;
+            transform: translateX(25px)
+          }
+
+        }
+
+        >button{
+          background-color: @Color-Red;
+          box-shadow: 0 0 10px @Color-Red;
+          color: #fff;
+          margin:0 25px 25px;
+
+          .isHoverActive({
+            background-color: lighten(@Color-Red, 10%);
+          }, {
+            color: @Color-Red;
+            background-color: #fff;
+          })
+        }
+
+      }
+
+      @media screen and (max-width: 768px){
+
+        width: 100%;
+        overflow: hidden;
+        overflow-x: auto;
+        white-space: nowrap;
+        padding: 10px 0 10px 50%;
+
+        >.PriceItem{
+          width:300px;
+          max-width: 150%;
+          margin: 0 0 0 20px;
+          display: inline-block;
+          transform: translateX(-50%);
+          &:first-child{
+            margin: 0;
+          }
+        }
+
+      }
+
+    }
+
+  }
+
+}

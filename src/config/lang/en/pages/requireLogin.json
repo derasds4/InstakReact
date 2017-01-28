@@ -1,0 +1,13 @@
+{
+  "title": "Require login",
+  "content": "This page is not available. Please log in, add account and buy license for access to all functions",
+  "user": {
+    "title": "Log in",
+    "content": ""
+  },
+  "license": {
+    "title": "Buy license",
+    "content": "You can try our service with free trial license",
+    "button": "Select license"
+  }
+}

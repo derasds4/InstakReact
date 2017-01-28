@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "derasds4",
+    "password": "6c0e14f27b8b427112d26b3ac7662a86",
+    "database": "www",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "derasds4",
+    "password": "6c0e14f27b8b427112d26b3ac7662a86",
+    "database": "www",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "derasds4",
+    "password": "6c0e14f27b8b427112d26b3ac7662a86",
+    "database": "www",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}

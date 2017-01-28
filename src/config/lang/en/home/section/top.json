@@ -1,0 +1,38 @@
+{
+  "navTitle":"About",
+  "title": "About",
+  "who": {
+    "title": "For whom"
+  },
+  "TopContent": {
+    "title": "Want to become popular on Instagram?",
+    "description": "It is an automated online service for advancing the Instagram account. While you are dealing with your own business, the service will do 1000 likes and 1000 follows instead of you, and thus, your account will encounter with a large mass.",
+    "button": "Try for free"
+  },
+  "VideoContent": {
+    "watch": "Watch video!"
+  },
+  "WhoContent": {
+    "title": "For whom?",
+    "list": {
+      "0": {
+        "0": "Mass media",
+        "1": "Restaurants",
+        "2": "Fitness clubs",
+        "3": "Night clubs"
+      },
+      "1": {
+        "0": "Beauty salons & stylists",
+        "1": "Tour firms",
+        "2": "Photographers & photomodels",
+        "3": "New bloggers"
+      },
+      "2": {
+        "0": "Auto stores",
+        "1": "Clothing stores",
+        "2": "Cinemas",
+        "3": "SMM"
+      }
+    }
+  }
+}

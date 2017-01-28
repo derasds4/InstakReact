@@ -1,0 +1,35 @@
+.ColSize(@value){
+  width: 100% / (12 / @value);
+}
+.Col(@large, @medium, @small, @default){
+  .ColSize(@default);
+  display: block;
+  float: left;
+  margin: 0;
+  @media screen and (min-width: 480px){
+    .ColSize(@small);
+  }
+  @media screen and (min-width: 768px){
+    .ColSize(@medium);
+  }
+  @media screen and (min-width: 1080px){
+    .ColSize(@large);
+  }
+}
+.Row(@large, @medium, @small, @default){
+  overflow: hidden;
+
+  &:after,
+  &:before {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+
+  >*{
+    .Col(@large, @medium, @small, @default);
+  }
+}

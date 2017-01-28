@@ -1,0 +1,68 @@
+@import "../../../style/interface/padding";
+@import "../../../style/config/color";
+@import "../../../style/interface/grid";
+@import "../index";
+
+#Our{
+  text-align: center;
+  background: #f9f8fb;
+  padding:60px 0;
+
+  .Item{
+    padding:0 10px 25px;
+    height:250px;
+
+    .Col(4, 6, 6, 12);
+
+    >img{
+      height:45px;
+      width:auto;
+      margin:10px auto;
+      display:block;
+    }
+
+    >h4:extend(.pd-y){
+      margin:0;
+      font-size:1.1rem;
+      text-transform: uppercase;
+      font-weight:500;
+    }
+
+    >.OurContent{
+      color:#666;
+      font-size:0.925rem;
+      line-height:1.75;
+      font-weight:300;
+      padding:0 20px;
+    }
+
+  }
+
+  >.Container:extend(.container){
+    >.Content {
+      overflow:hidden;
+
+      >.Expand {
+
+        border-color: @Color-Active-Main;
+
+        @media screen and (min-width: 480px) {
+          display: none;
+        }
+
+      }
+
+    }
+  }
+
+  @media screen and (max-width: 480px){
+
+    &:not(.Expanded){
+      .Item:nth-child(n+3){
+        display: none;
+      }
+    }
+
+  }
+
+}

@@ -1,0 +1,35 @@
+{
+  "title": "License",
+  "total": "Total price",
+  "current": {
+    "title": "Current license"
+  },
+  "buy": {
+    "title": "Acquire new license (current will be destroyed)"
+  },
+  "props": {
+    "accounts": {
+      "title": "Accounts"
+    },
+    "startedAt": {
+      "title": "Started at"
+    },
+    "expiresIn": {
+      "title": "Expires in"
+    },
+    "type": {
+      "title": "Type",
+      "free": "Free trial (1 account)",
+      "start": "Start (1 account)",
+      "standard": "Standard (3 accounts)",
+      "premium": "Premium (7 accounts)"
+    },
+    "time": {
+      "title": "Time",
+      "free": "1 day",
+      "1": "1 month",
+      "3": "3 months (-10%)",
+      "6": "6 months (-20%)"
+    }
+  }
+}

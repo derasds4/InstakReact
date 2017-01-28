@@ -1,0 +1,13 @@
+{
+  "title": "Add Account",
+  "username": {
+    "title": "Username"
+  },
+  "password": {
+    "title": "Password"
+  },
+  "errors":{
+    "username":"This field is required",
+    "password":"This field is required"
+  }
+}

@@ -1,0 +1,1 @@
+export const setDialog = 'SET_DIALOG';

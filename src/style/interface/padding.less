@@ -1,0 +1,49 @@
+@import "./utils/setProperty";
+
+.addPadding(@name){
+
+  .setProperty(~"padding-@{name}")
+
+}
+
+.addPaddingX(){
+
+  .addPadding(~"left");
+  .addPadding(~"right");
+
+}
+.addPaddingY(){
+
+  .addPadding(~"top");
+  .addPadding(~"bottom");
+
+}
+
+.addPaddingAll(){
+  
+  .addPaddingX();
+  .addPaddingY();
+  
+}
+
+.pd-all{
+  .addPaddingAll();
+}
+.pd-x{
+  .addPaddingX();
+}
+.pd-y{
+  .addPaddingY();
+}
+.pd-t{
+  .addPadding(top);
+}
+.pd-r{
+  .addPadding(right);
+}
+.pd-b{
+  .addPadding(bottom);
+}
+.pd-l{
+  .addPadding(left);
+}

@@ -1,0 +1,45 @@
+{
+  "navTitle": "Qiymətlər",
+  "title": "Sərfəli tarif planları",
+  "description":{
+    "0":"Sizə uyğun və sərf edən tarif planını seçin.",
+    "1":"Diqqət yetirin, 3 və 6 aylıq ödənişlərdə endirimlər edilir. "
+  },
+  "months":{
+    "1":{
+      "title":"1 aylıq"
+    },
+    "3":{
+      "title":"3 aylıq"
+    },
+    "6":{
+      "title":"6 aylıq"
+    }
+  },
+  "prices":{
+    "start":{
+      "title":"Start"
+    },
+    "standart":{
+      "title":"Standart"
+    },
+    "premium":{
+      "title":"Premium"
+    }
+  },
+  "accounts":{
+    "1":{
+      "add":"1 səhifə üçün"
+    },
+    "3":{
+      "add":"3 səhifə üçün"
+    },
+    "7":{
+      "add":"7 səhifə üçün"
+    }
+  },
+  "start":"Almaq",
+  "access":{
+    "all":"Bütün funksiyalar açıqdır"
+  }
+}

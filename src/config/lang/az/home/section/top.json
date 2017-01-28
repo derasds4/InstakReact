@@ -1,0 +1,38 @@
+{
+  "navTitle": "Haqqımızda",
+  "title": "Haqqımızda",
+  "who": {
+    "title": "For whom"
+  },
+  "TopContent": {
+    "title": "Instagram'da populyar olmaq istəyirsən?",
+    "description": "Instagram səhifəsinin irəliləyişi üçün avtomatlaşdırılmış online servis. Öz işinizlə məsğul olarkən, servis sizin əvəzinizə gün ərzində 1000 like və 1000 follow edir və beləliklə, səhifə gündəlik böyük kütlə ilə qarşılaşır.",
+    "button": "Ödənişsiz yoxlayın"
+  },
+  "VideoContent": {
+    "watch": "Videonu izlə!"
+  },
+  "WhoContent": {
+    "title": "Kimlər üçün?",
+    "list": {
+      "0": {
+        "0": "KİV",
+        "1": "Restoranlar",
+        "2": "Fitnes-klubları",
+        "3": "Gecə klubları"
+      },
+      "1": {
+        "0": "Gözəllik salonları və stilistlər",
+        "1": "Tur firmalar",
+        "2": "Fotoqraflar və modellər",
+        "3": "Yeni başlayan bloggerlər"
+      },
+      "2": {
+        "0": "Avtosalonlar",
+        "1": "Paltar mağazaları",
+        "2": "Kinoteatrlar",
+        "3": "SMM"
+      }
+    }
+  }
+}

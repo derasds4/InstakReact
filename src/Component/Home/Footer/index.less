@@ -1,0 +1,259 @@
+@import "../../../style/isHoverActive";
+@import "../../../style/interface/background";
+@import "../../../style/interface/grid";
+@import "../../../style/interface/button";
+@import "../index";
+
+#Section{
+  padding:0 0 60px 0;
+  background: #efeef2;
+
+  >.Container:extend(.container){
+
+    >.Info{
+
+      .Row(3, 3, 6, 6);
+      padding:50px 0;
+      border-bottom: 1px solid #ccc;
+      margin:0 0 50px;
+
+      >ul{
+        line-height: 1.5;
+        font-weight: 300;
+        >li{
+          padding:10px 0;
+        }
+      }
+
+      >aside>a{
+        display:block;
+        padding:10px 0;
+        text-decoration: underline;
+        cursor:pointer;
+        font-weight:300;
+        color:#555;
+
+        .isHoverActive({
+          color: #888;
+        },{
+          color:#222;
+        });
+
+      }
+
+    }
+
+    >.Shares{
+
+      overflow: hidden;
+
+      >.SharesSocials{
+
+        display: inline-block;
+
+        >h6{
+          color:#666;
+          font-weight:400;
+        }
+
+        >div{
+
+          overflow: hidden;
+
+          >a{
+            display:block;
+            width:25px;
+            height:25px;
+            float: left;
+            margin:0 10px 0 0;
+            cursor: pointer;
+            position: relative;
+
+            >img{
+              max-height: 25px;
+              max-width: 25px;
+              display: block;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translateX(-50%) translateY(-50%);
+            }
+
+          }
+
+        }
+
+      }
+
+      >.SharesOther{
+
+        float:right;
+
+        >.SharesOtherMoney{
+          float: left;
+
+          >span:extend(.bgimage-center){
+            width:100px;
+            display:block;
+            float:right;
+            height: 40px;
+            background-size: auto 28px;
+            margin: 0 10px 0 0;
+
+            &:first-child{
+              width: 75px;
+              background-size: auto 22px;
+            }
+
+          }
+
+        }
+
+        >button:extend(.button.bordered){
+          float:right;
+          color: #777;
+          border-color: #aaa;
+          padding-left: 15px;
+
+          .isHoverActive({
+            background-color: #eee;
+          },{
+            color: #fff;
+            background-color: #aaa;
+          });
+
+          >img{
+            display: block;
+            float: left;
+            margin: 6px 12.5px 6px 0;
+            width: 24px;
+            height: 24px;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+  @media screen and (max-width: 1080px){
+
+    >.Container{
+      >.Info{
+        padding: 20px;
+      }
+    }
+  }
+  @media screen and (max-width: 768px){
+
+    padding-bottom: 30px;
+
+    >.Container{
+
+      >.Info{
+        margin-bottom: 20px;
+        padding: 15px;
+
+        >aside{
+          display: none;
+        }
+      }
+
+      >.Shares{
+
+        position: relative;
+        padding-bottom: 55px;
+
+        >.SharesOther{
+
+          width: 50%;
+          margin-top: -5px;
+
+          >button{
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+
+          >.SharesOtherMoney{
+
+            >span{
+              width: 75px;
+              height: 35px;
+              background-size: auto 21px;
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+  @media screen and (max-width: 480px){
+
+    >.Container{
+
+      >.Info{
+
+        padding: 15px 0;
+
+        >ul{
+          width: 100% !important;
+          padding: 0 10px;
+          >li{
+            padding: 0;
+          }
+        }
+
+      }
+
+      >.Shares>.SharesOther{
+        width: ~"calc( 100% - 175px)";
+
+      }
+
+    }
+
+  }
+
+  @media screen and (max-width: 400px){
+
+    >.Container{
+
+      >.Shares{
+
+        text-align: center;
+
+        >.SharesOther {
+
+          width: 100%;
+          padding: 0 0 10px;
+
+          > .SharesOtherMoney {
+
+            width: 100%;
+            float: none;
+
+            > span {
+              float: none;
+              display: inline-block;
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}

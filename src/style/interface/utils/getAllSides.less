@@ -1,0 +1,34 @@
+@import "../../config/interface/value";
+@import "for";
+
+@Interface-Value-Loop-L: @Interface-Value-L, @Interface-Value-M, @Interface-Value-S;
+@Interface-Value-Loop-M: @Interface-Value-L-M, @Interface-Value-M-M, @Interface-Value-S-S;
+@Interface-Value-Loop-S: @Interface-Value-L-S, @Interface-Value-M-S, @Interface-Value-S-S;
+
+@Interface-Loop: @Interface-Value-Loop-L, @Interface-Value-Loop-M, @Interface-Value-Loop-S;
+@Interface-Key-Postfix: t, r, b, l;
+@Interface-Name-Postfix: top, right, bottom, left;
+
+.getSide(@key,@name,@value){
+  .@{key}{
+    @name:@value;
+  }
+}
+
+.getAllSides(@key,@name){
+
+  .Loop(@index: length(@Interface-Loop)) when (@index > 0){
+    @collection: extract(@Interface-Loop, @index);
+
+    .Loop-Deep(@deepIndex: length(@collection)) when( @index = length(@Interface-Loop) and @deepIndex > 0 ){
+
+    }
+    .Loop-Deep(@deepIndex: length(@collection)) when( @deepIndex > 0 ) and not ( @index = length(@Interface-Loop) ) {
+
+    }
+
+  }
+
+  .Loop;
+
+}

@@ -1,0 +1,152 @@
+@import "../../../style/interface/padding";
+@import "../../../style/interface/background";
+@import "../../../style/isHoverActive";
+@import "../../../style/after";
+@import "../../../style/position";
+@import "../../../style/config/color";
+@import "../../../style/interface/grid";
+@import "../index";
+
+#Section:extend(.bgimage-center,.pd-x) {
+
+  padding-top: 175px;
+  padding-bottom: 75px;
+  color: #fff;
+  position: relative;
+  background-color: @Color-Main;
+  .after({
+    &:extend(.position-filled); z-index: 0; background-color: rgba(19, 36, 160, 0.3); });
+
+  > .Container:extend(.container) {
+    position: relative;
+    z-index: 1;
+    > .TopContent {
+      .Row(6, 6, 12, 12);
+      .Content {
+        padding-right: 35px;
+        h1 {
+          margin-bottom: 0;
+          font-weight: 500;
+        }
+        .Description {
+          font-family: 'Open Sans Light', 'Open Sans', 'Helvetica Neue', Calibri, sans-serif;
+          font-weight: 300;
+          padding: 30px 0;
+          line-height: 1.5;
+        }
+        button {
+          background-color: @Color-Red;
+          color: #fff;
+          box-shadow: 0 0 6px -1px @Color-Red;
+
+          .isHoverActive({ background-color: darken(@Color-Red, 10%); }, { background-color: #fff; color: @Color-Red; box-shadow: 0 0 0 0 transparent; })
+
+        }
+      }
+    }
+
+    > .WhoContent {
+      padding-top: 125px;
+      text-align: left;
+
+      > .ul:extend(.ul-style){
+        .Row(4, 6, 12, 12);
+        padding: 0 0 0 20px;
+        li{
+          padding:5px 0;
+          line-height: 20px;
+          font-weight: 300;
+          position: relative;
+
+          &:before{
+            content:"";
+            width:10px;
+            height:10px;
+            border:3px solid #dec626;
+            border-radius:5px;
+            box-sizing: border-box;
+            position: absolute;
+            top:10px;
+            left:-20px;
+          }
+        }
+      }
+
+    }
+  }
+
+  .VideoContent {
+    padding-top: 50px;
+    > .macbook {
+      width: 100%;
+      background-size: contain;
+      position: relative;
+
+      > img {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+      }
+      > .play:extend(.bgimage-center) {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        width: 70px;
+        height: 60px;
+        background-size: contain;
+        transform: translateX(-50%) translateY(-50%);
+        cursor: pointer;
+        transition: transform 200ms;
+        .isHoverActive({ transform: translateX(-50%) translateY(-50%) scale(1.1); }, { transform: translateX(-50%) translateY(-50%) scale(0.9); })
+      }
+      > .watch {
+        position: absolute;
+        top: ~"calc(45% + 42px)";
+        left: 50%;
+        font-weight: 300;
+        letter-spacing: 1px;
+        transform: translateX(-50%);
+      }
+
+    }
+
+  }
+
+  @media screen and (max-width: 758px) {
+    padding-top: 150px;
+    text-align: center;
+    background-position-x: left;
+
+    > .Container {
+
+      > .TopContent > .Content {
+        padding-right: 0;
+
+        > h1 {
+          padding-right: 0;
+        }
+      }
+
+      > .WhoContent {
+        padding-top: 100px;
+      }
+
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    padding-top: 100px;
+    padding-bottom: 40px;
+
+    > .Container {
+      > .TopContent {
+        padding-bottom: 40px;
+      }
+      > .WhoContent {
+        display: none;
+      }
+    }
+
+  }
+
+}

@@ -1,0 +1,69 @@
+@import "color";
+
+@App-offset--L:18px;
+@App-offset--M:13px;
+@App-offset--S:10px;
+
+@App-size--L:20px;
+@App-size--M:18px;
+@App-size--S:16px;
+
+@App-media--L:1080px;
+@App-media--M:768px;
+@App-media--S:480px;
+
+@App-transit--speed-default:250ms;
+@App-transit--speed-fast:200ms;
+@App-transit--speed-fastest:150ms;
+@App-transit--speed-medium:300ms;
+@App-transit--speed-slow:500ms;
+@App-transit--speed-slowest:750ms;
+
+.App-padding-value(@name,@value) {
+
+  padding-@{name}:@value;
+
+}
+
+.App-padding-media(@name){
+
+  .App-padding-value(@name,@App-offset--L);
+
+  @media screen and (max-width: @App-media--M){
+    .App-padding-value(@name,@App-offset--M);
+  }
+
+  @media screen and (max-width: @App-media--S){
+    .App-padding-value(@name,@App-offset--S);
+  }
+
+}
+
+.App-padding(@top:true,@right:true,@bottom:true,@left:true){
+
+  & when(@top){
+    .App-padding-media(top);
+  }
+  & when(@right){
+    .App-padding-media(right);
+  }
+  & when(@bottom){
+    .App-padding-media(bottom);
+  }
+  & when(@left){
+    .App-padding-media(left);
+  }
+
+}
+
+.App-block-item(@top:true,@right:true,@bottom:true,@left:true){
+
+  .App-padding(@top,@right,@bottom,@left);
+
+  border-radius:4px;
+  font-size:0.975rem;
+  text-align: left;
+  border:1px solid @App-Color--system;
+  margin-bottom: @App-offset--L;
+
+}

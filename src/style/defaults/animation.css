@@ -1,0 +1,73 @@
+.transit-on {
+	transition: 225ms!important;
+}
+
+.transit-off {
+	transition: none!important;
+}
+
+.transit-medium {
+	transition: 350ms!important;
+}
+
+.transit-slow {
+	transition: .6s!important;
+}
+
+.transit-slower {
+	transition: 1s!important;
+}
+
+.scale-on:hover:active {
+	transform: scale(.9)!important;
+}
+
+.easing-linear {
+	animation-timing-function: linear!important;
+	transition-timing-function: linear!important;
+}
+
+.easing-out {
+	animation-timing-function: ease-out!important;
+	transition-timing-function: ease-out!important;
+}
+
+.easing-in {
+	animation-timing-function: ease-in!important;
+	transition-timing-function: ease-in!important;
+}
+
+.easing-in-out {
+	animation-timing-function: ease-in-out!important;
+	transition-timing-function: ease-in-out!important;
+}
+
+.easing-in-cubic {
+	animation-timing-function: cubic-bezier(.55,.055,.675,.19)!important;
+	transition-timing-function: cubic-bezier(.55,.055,.675,.19)!important;
+}
+
+.easing-out-cubic {
+	animation-timing-function: cubic-bezier(.215,.61,.355,1)!important;
+	transition-timing-function: cubic-bezier(.215,.61,.355,1)!important;
+}
+
+.easing-in-circ {
+	animation-timing-function: cubic-bezier(.6,.04,.98,.335)!important;
+	transition-timing-function: cubic-bezier(.6,.04,.98,.335)!important;
+}
+
+.easing-out-circ {
+	animation-timing-function: cubic-bezier(.075,.82,.165,1)!important;
+	transition-timing-function: cubic-bezier(.075,.82,.165,1)!important;
+}
+
+.easing-in-project {
+	animation-timing-function: cubic-bezier(.8,.085,.955,.235)!important;
+	transition-timing-function: cubic-bezier(.8,.085,.955,.235)!important;
+}
+
+.easing-out-project {
+	animation-timing-function: cubic-bezier(.145,1,.43,.96)!important;
+	transition-timing-function: cubic-bezier(.145,1,.43,.96)!important;
+}

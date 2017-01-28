@@ -1,0 +1,22 @@
+{
+  "about": {
+    "title": "Bütün hüquqlar qorunur © 2016",
+    "description": "Instagram səhifənin irəliləyişi üçün avtomatlaşdırılmış online servis."
+  },
+  "links": {
+    "0": {
+      "offices": "FAQ",
+      "about": "Blog",
+      "docs": "",
+      "qa": ""
+    },
+    "1": {
+      "partners": "Əmakdaşlıq proqramı",
+      "politics": "Məxfilik siyasəti",
+      "articles": ""
+    }
+  },
+  "socials":{
+    "title":"Biz sosial şəbəkələrdə"
+  }
+}

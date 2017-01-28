@@ -1,0 +1,28 @@
+{
+  "signup": "Sign up",
+  "login": "Log in",
+  "selectLanguage": "Language",
+  "logout": "Log out",
+  "cancel": "Cancel",
+  "signupAction": "Signup",
+  "loginAction": "Login",
+  "logoutAction": "Logout",
+  "submit": "Submit",
+  "back": "Back",
+  "forward": "Forward",
+  "next": "Next",
+  "prev": "Prev",
+  "finish": "Finish",
+  "openTutorial": "Open tutorial",
+  "state": {
+    "min": "Min.",
+    "max": "Max."
+  },
+  "success": "Success",
+  "account": {
+    "add": "Add account"
+  },
+  "license": {
+    "buy": "Buy license"
+  }
+}

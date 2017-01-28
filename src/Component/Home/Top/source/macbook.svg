@@ -1,0 +1,29 @@
+<svg id="macbook-pro" xmlns="http://www.w3.org/2000/svg" width="686" height="372" viewBox="0 0 686 372">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #3920b8;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #4e31e1;
+      }
+
+      .cls-3 {
+        fill: #4527da;
+      }
+
+      .cls-4 {
+        fill: #262a6a;
+      }
+    </style>
+  </defs>
+  <path id="bottom" class="cls-1" d="M914,714.8h686S1575.39,726,1559.73,726H952.774C936.37,726,914,714.8,914,714.8Z" transform="translate(-914 -354)"/>
+  <path id="case" class="cls-2" d="M914,696.867h686V714.8H914V696.867Z" transform="translate(-914 -354)"/>
+  <path id="display" class="cls-3" d="M1010.93,354h492.88a14.922,14.922,0,0,1,14.91,14.941V696.867h-522.7V368.94A14.927,14.927,0,0,1,1010.93,354Z" transform="translate(-914 -354)"/>
+  <path id="screen" class="cls-4" d="M1010.93,370.433h492.14V676.7H1010.93V370.433Z" transform="translate(-914 -354)"/>
+</svg>

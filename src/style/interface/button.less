@@ -1,0 +1,44 @@
+@import "../config/animation";
+@import "../isHoverActive";
+@import "../config/color";
+@import "background";
+
+.button, :global(.landing) button {
+  width: auto;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 20px;
+  box-shadow: inset 0 0 0 100px transparent;
+  background-color: transparent;
+  color: @Color-Active-Main;
+  border: none;
+  outline: none;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 0 25px;
+  font-size: .9rem;
+  transition: background-color @Animation-Speed-default, color @Animation-Speed-default, box-shadow @Animation-Speed-default;
+
+  &.bordered {
+    border: 2px solid @Color-Active-Main;
+    line-height: 36px;
+  }
+
+  &.colored {
+    background-color: @Color-Main;
+    color: #fff;
+  }
+
+  .icon:extend(.bgimage-center) {
+    width: 20px;
+    height: 40px;
+    margin: 0 10px 0 0;
+    display: block;
+    float: left;
+    background-size: auto, 16px;
+  }
+
+  .isHoverActive({ box-shadow: inset 0 0 0 100px rgba(100, 100, 100, .2); }, { color: #fff; background-color: @Color-Active-Main; });
+}

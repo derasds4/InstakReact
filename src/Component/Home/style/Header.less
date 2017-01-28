@@ -1,0 +1,168 @@
+@import "../../../style/config/animation";
+@import "../../../style/config/color";
+@import "../../../style/isHoverActive";
+@import "../../../style/interface/background";
+@import "../../../style/interface/button";
+
+.Header{
+
+  color: @Color-Foreground-Main;
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  height:60px;
+  z-index: 100;
+  box-shadow: 0 0 10px 2px @Color-Main;
+  background-color: @Color-Main;
+
+  > .Logo{
+    position:absolute;
+    top:10px;
+    left:30px;
+    height:40px;
+    display:block;
+
+    >.LogoIcon{
+      height:28px;
+      float:left;
+      margin:6px 8px 0;
+      display: block;
+    }
+
+    >.LogoTitle{
+      line-height:40px;
+      overflow:hidden;
+      letter-spacing: 2px;
+      font-size:1.075rem;
+    }
+
+    @media screen and (max-width: 480px){
+      left:10px;
+      >.LogoTitle{
+        display:none;
+      }
+    }
+  }
+
+  >.Nav{
+
+    overflow: hidden;
+    position: absolute;
+    left: 150px;
+
+    >a{
+
+      height:60px;
+      line-height:40px;
+      padding:7px 30px 10px;
+      color:#fff;
+      border-top:3px solid transparent;
+      display:block;
+      float:left;
+      font-weight: 200;
+      opacity:.75;
+      transition: opacity @Animation-Speed-default, border-top-color @Animation-Speed-default;
+
+      .isHoverActive({
+        opacity:.9;
+      },{
+        border-top-color:@Color-Red;
+        opacity:1;
+      });
+
+    }
+
+  }
+
+  >.Buttons{
+    position:absolute;
+    top:10px;
+    right:30px;
+
+    .ButtonMixinState(){
+      .isHoverActive({
+        box-shadow: inset 0 0 0 100px fade(@Color-Active-Main, 20%);
+      },{ color: #fff; background-color: @Color-Active-Main; });
+    }
+
+    .ButtonMixinLang(){
+      width: 40px;
+      padding: 0;
+
+      >img{
+        width:24px;
+        height:24px;
+        margin:6px;
+      }
+    }
+
+    >button:extend(.button){
+      margin-left:10px;
+      display: block;
+      float:left;
+      font-weight: 200;
+
+      &.ButtonLogin,
+      &.ButtonSignup {
+        background-color: #fff;
+        color: @Color-Background-Main;
+
+        .ButtonMixinState();
+      }
+
+      &.ButtonLang:extend(.button.bordered){
+        .ButtonMixinLang();
+      }
+
+    }
+
+    >.LangSelect{
+
+      width: 40px;
+      display: block;
+      float: left;
+
+      >button:extend(.button.bordered){
+        .ButtonMixinState();
+        .ButtonMixinLang();
+        background-color: @Color-Main;
+      }
+
+      >:not(:first-child){
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-top: @Color-Main;
+      }
+      >:not(:last-child){
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-bottom: @Color-Main;
+      }
+
+    }
+
+    @media screen and (max-width: 480px){
+      right:10px;
+    }
+  }
+
+  @media screen and (max-width: 1000px){
+    >.Nav{
+      left:130px;
+      >a{
+        padding:7px 15px 10px;
+      }
+    }
+    >.Buttons>.ButtonSignup{
+      display:none;
+    }
+  }
+
+  @media screen and (max-width:768px){
+    >nav{
+      display:none;
+    }
+  }
+
+}

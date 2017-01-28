@@ -1,0 +1,190 @@
+@import "../../../style/pseudo";
+@import "../../../style/interface/background";
+@import "../../../style/config/color";
+@import "../../../style/isHoverActive";
+@import "../index";
+
+@Color-Replies: #211f38;
+
+#Section{
+  background-color: @Color-Replies;
+  padding: 60px 0;
+  color: #fff;
+  text-align: center;
+
+  h2 {
+    font-size: 2.2rem;
+    margin: 0 0 10px;
+    font-weight: 400;
+  }
+
+  .description {
+    font-size: .95rem;
+    color: #aaa;
+    margin: 0 0 30px;
+    font-weight: 300;
+  }
+
+  > .Container:extend(.container) {
+
+    > .Content {
+
+      > .Replies {
+        padding: 20px 0 0 0;
+        position: relative;
+        overflow: hidden;
+
+        .replyBlock() {
+          background: #fff;
+          border-radius: 6px;
+        }
+        .replyPseudo(@z,@alpha,@x,@scale) {
+          position: absolute;
+          top: 0;
+          left: @x;
+          right: 0;
+          bottom: 0;
+          .replyBlock();
+          z-index: @z;
+          opacity: @alpha;
+          transform: scale(@scale);
+        }
+        .replyItem() {
+          position: absolute;
+          width: 100px;
+          height: 100px;
+          border-radius: 50px;
+          top: 50%;
+        }
+
+        > .Reply {
+          max-width: ~"calc( 100% - 100px )";
+          width: 700px;
+          position: relative;
+          margin: 0 auto;
+          z-index: 5;
+          overflow: visible;
+          padding: 35px 70px;
+          color: #222;
+          text-align: left;
+          .replyBlock();
+          .pseudo(before, { .replyPseudo(0, .5, -30px, .94) });
+          .pseudo(after, { .replyPseudo(-1, .2, -60px, .88) });
+
+          > * {
+            z-index: 1;
+            position: relative;
+          }
+
+          > img {
+            .replyItem();
+            box-shadow: 0 0 10px #444;
+            left: 0;
+            transform: translateX(-50%) translateY(-50%);
+          }
+
+          > .NextReply:extend(.bgimage-center) {
+            .replyItem();
+            right: 0;
+            background-color: @Color-Replies;
+            background-size: 20px;
+            z-index: 6;
+            transform: translateX(50%) translateY(-50%);
+            cursor: pointer;
+          }
+
+          >.ReplyContent{
+
+            > h5 {
+              color: @Color-Main;
+              margin: 0 0 5px;
+            }
+
+            > .ReplyAbout {
+              color: #666;
+              margin: 0 0 12px;
+              font-size: .95rem;
+              font-style: italic;
+            }
+
+            > .ReplyBody {
+              font-weight: 400;
+              line-height: 1.5;
+            }
+
+          }
+
+          > a:extend(.bgimage-center) {
+            width: 32px;
+            height: 32px;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            margin: -16px 0 0 -16px;
+            border-radius: 16px;
+            color: #fff;
+            text-align: center;
+            font-size: 18px;
+            line-height: 32px;
+
+            &[data-type="vk"] {
+              background: #445fb0;
+              transform: translateX(-32px) translateY(70px);
+              font-size: 16px;
+              &:after {
+                content: "vk"
+              }
+            }
+            &[data-type="fb"] {
+              background: #1b5de4;
+              transform: translateX(-65px) translateY(45px);
+              &:after {
+                content: "f"
+              }
+
+            }
+
+          }
+
+          @media screen and (max-width: 768px){
+
+            padding: 25px 50px;
+
+            >img,
+            >.next{
+              width: 80px;
+              height: 80px;
+            }
+
+            >a[data-type]{
+              transform: none;
+              top: -16px;
+              left: 25px;
+              margin: 0;
+
+              &[data-type="fb"]{
+                left: 67px;
+              }
+            }
+
+          }
+
+          @media screen and (max-width: 480px){
+
+            padding: 25px 50px 25px 25px;
+            max-width: ~"calc( 100% - 20px )";
+            >img{
+              display: none;
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}

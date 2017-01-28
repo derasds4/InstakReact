@@ -1,0 +1,45 @@
+{
+  "navTitle": "Prices",
+  "title": "Profitable tariff plans",
+  "description":{
+    "0":"Choose a suitable and affordable tariff plan for yourselves.",
+    "1":"Discounts are applied to the third and sixth months payments."
+  },
+  "months":{
+    "1":{
+      "title":"per 1 month"
+    },
+    "3":{
+      "title":"per 3 months"
+    },
+    "6":{
+      "title":"per 6 months"
+    }
+  },
+  "prices":{
+    "start":{
+      "title":"Start"
+    },
+    "standart":{
+      "title":"Standart"
+    },
+    "premium":{
+      "title":"Premium"
+    }
+  },
+  "accounts":{
+    "1":{
+      "add":"For 1 account"
+    },
+    "3":{
+      "add":"For 3 accounts"
+    },
+    "7":{
+      "add":"For 7 accounts"
+    }
+  },
+  "start":"Buy",
+  "access":{
+    "all":"All functions are available"
+  }
+}
